@@ -1,0 +1,12 @@
+body {
+
+  background-color: lightblue;
+}
+.titulo-rojo{
+  color: red;
+  font-size: 20px;
+}
+
+#contacto{
+  background-color: pink;
+}
