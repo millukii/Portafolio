@@ -4,13 +4,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <title>Portafolio</title>
+
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
   <link rel="stylesheet" href="assets/css/estilos.css">
   <link rel="stylesheet" href="assets/css/breakpoints.css">
+
 </head>
 
 <body>
 
   <main>
+
+    <nav class="navbar bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Melody Romero</a>
+      </div>
+    </nav>
+
+    <!-- As a heading -->
+    <nav class="navbar navbar-expand-lg bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portafolio</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos/floreria/index.html">Florería</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="proyectos/cine/index.html">Cine</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="proyectos/hamburgeseria/index.html">Hamburguesería</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
 
     <nav>
       <ul>
@@ -22,6 +61,18 @@
     <header>
       <h1 class="titulo-rojo">Portafolio Melody Romero, Desarrollador Fullstack</h1>
     </header>
+
+    <section>
+
+      <h3>Tipos de contenedor</h3>
+      <div class="container-sm">100% wide until small breakpoint</div>
+      <div class="container-md">100% wide until medium breakpoint</div>
+      <div class="container-lg">100% wide until large breakpoint</div>
+      <div class="container-xl">100% wide until extra large breakpoint</div>
+      <div class="container-xxl">100% wide until extra extra large breakpoint</div>
+
+    </section>
+
     <section id="contacto">
       <h2>Contacto</h2>
     </section>
@@ -32,6 +83,9 @@
     <h4>Anuncios</h4>
   </aside>
 
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>
