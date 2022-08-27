@@ -1,0 +1,47 @@
+body {
+  background-color: grey;
+}
+
+.contenedor {
+  width: 100%;
+  display: inline-block;
+  margin: 0 auto;
+  transition: width 0.1s;
+  border-width: 1px;
+  border-style: solid;
+  border-color: black;
+}
+
+nav {
+  position: sticky;
+  top: 0%;
+  height: 50px;
+  background-color: violet;
+  width: 100%;
+}
+nav ul {
+  list-style-type: none;
+}
+nav li {
+  float: left;
+}
+nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+.imagen-empresa {
+  /*border: [border-width || border-style || border-color | inherit] ;*/
+  /*border: 30px dotted transparent;*/
+  border-width: 10px;
+  border-style: solid;
+  border-color: pink;
+}
+.imagen {
+  width: 250px;
+  height: 250px;
+}
+body {
+}

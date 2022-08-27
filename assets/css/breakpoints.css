@@ -1,6 +1,5 @@
 /*referencias https://jairogarciarincon.com/clase/introduccion-a-las-aplicaciones-web-con-html5-css3-y-javascript/diseno-responsive-con-media-queries*/
 
-
 /* Pantilla 1: Diseño responsive a partir del diseño más grande (el de escritorio) Como bootstrap
 
 Pantallas muy grandes  (desktops de más de 1200px de ancho)
@@ -30,21 +29,33 @@ Pantilla 2: Diseño responsive a partir del diseño más pequeño (el de móvil)
 //No hace falta media-query porque será nuestro diseño por defecto
 
 //Pantallas pequeñas (móviles en landscape de más de 576px) */
-@media (min-width: 576px) { 
-
- }
+@media (min-width: 576px) {
+  .contenedor {
+    width: 50%;
+    background-color: red;
+  }
+}
 
 /*Pantallas medianas (tablets de más de 768px)*/
 @media (min-width: 768px) {
-
+  .contenedor {
+    width: 60%;
+    background-color: purple;
   }
+}
 
 /*Pantallas grandes (desktops de más de 992px)*/
-@media (min-width: 992px) { 
-
+@media (min-width: 992px) {
+  .contenedor {
+    width: 80%;
+    background-color: yellow;
+  }
 }
 
 /*Pantallas muy grandes (desktops de más de 1200px)*/
 @media (min-width: 1200px) {
-
+  .contenedor {
+    width: 90%;
+    background-color: green;
+  }
 }
