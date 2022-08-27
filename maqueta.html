@@ -1,0 +1,128 @@
+<!--Etiqueta para identificar tipo de archivo html-->
+<!DOCTYPE html>
+<!--Las etiquetas se componen de los simbolos de apertura y cierre, el nombre de la etiqueta, y los atributos junto a sus valores-->
+<!--Cada etiqueta puede tener una serie de propiedad estas son las que se representan a través de los atributos pueden ser comunes o diferentes-->
+
+<!--Comienzo de la especificación html-->
+<html lang="es">
+
+<!--Estas etiquetas dentro del head son de configuración, no tienen un impacto visual-->
+
+<head>
+  <!--Titulo que aparece en las pestañas del navegador-->
+  <title>Maqueta</title>
+
+  <!--Icono que aparece en las pestañas del navegador se pueden especificar diferentes tamaños para diferentes dispositivos-->
+  <link rel="icon" type="image/png" href="assets/images/icons8-sandía-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="assets/images/icons8-sandía-16.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="assets/images/icons8-sandía-16.png" sizes="96x96">
+
+  <!--
+    Un chaset o conjunto de caracteres completo es básicamente un set de caracteres que reconoce el ordenador de la misma manera que una calculadora identifica números. Cada uno de los caracteres se representa con un número conocido como punto de código y esto crea un canal de comunicación para codificar y decodificar contenido. 
+    Esta etiqueta nos permite usar acentos y ñ o caracteres especiales
+  -->
+  <meta charset="UTF-8">
+
+  <!--Etiqueta Mobile first
+  Con esta etiqueta permitimos el responsive diciendo que nuestro contenido debe usar el ancho completo del dispositivo con una escala inicial de 1 (zoom)
+  https://medium.com/@worldtechmakers/c%C3%B3mo-funciona-la-etiqueta-meta-viewport-f6da5f822e1d
+  -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!--Links a archivos externos
+  Si queremos agregar estilos o programacion con javascript podemos hacer referencia a un archivo local o a uno remoto
+  -->
+  <link href="assets/css/breakpoints.css" rel="stylesheet">
+  <link href="assets/css/maqueta.css" rel="stylesheet">
+</head>
+<!--Aqui se especifica el DOM, Document Object Model
+
+https://developer.mozilla.org/es/docs/Web/API/Document_Object_Model/Introduction
+-->
+
+<body>
+  <!--Contenido principal-->
+  <main>
+    <!--Etiqueta que representa la seccion donde va el Menu de navegacion-->
+    <nav>
+      <!--Lista sin order unorder list-->
+      <ul>
+        <!--List item-->
+        <li>
+          <!--Elemento que representa un hipervinculo-->
+          <a>
+            Item 1
+          </a>
+        </li>
+        <li>Item 2</li>
+      </ul>
+    </nav>
+    <!--Un section marca los limites de un contenido de cierto tipo lo ideal es que todos tenga coherencia entre si en cuanto al proposito de la seccion-->
+    <section>
+      <h1>Titulo</h1>
+      <p>lorem ipsum dolor sit amet, consect</p>
+    </section>
+
+    <section>
+      <h2>Productos/Servicios</h2>
+      <!--
+        Un article representa alguna seccion reutilizable o autocontenida, que podamos ponerla en cualquier sitio por ejemplo un articulo de blog o un producto
+        Se pueden tener articles dentro de articles
+        podria ser por ejemplo un listado de productos dentro de una categoria
+        https://developer.mozilla.org/en-US/docs/Web/HTML/Element/article
+      -->
+      <article class="categoria">
+        <h2>Jardin</h2>
+        <p>Descripcion de la categoria</p>
+        <img src="assets/images/">
+        <article class="producto">
+          <h4>Pala</h4>
+          <p>Descripcion del producto</p>
+          <img src="assets/images/">
+        </article>
+      </article>
+    </section>
+
+    <section>
+      <h3>Nombre Empresa</h3>
+      <img src="assets/images/logo.png" alt="logo">
+      <ul>
+
+      </ul>
+      <h3>Contacto</h3>
+      <form>
+
+        <label for="input-email">Email</label>
+        <input type="email" name="email" id="input-email" placeholder="emaildejuanito@gmail.com">
+
+        <label for="input-nombre">Nombre</label>
+        <input type="text" name="nombre" id="input-nombre">
+
+        <label for="input-comentario">Comentario</label>
+        <textarea rows="3" cols=""></textarea>
+
+        <button type="submit">Enviar</button>
+      </form>
+    </section>
+
+    <aside>
+      <h4>Articulos relacionados</h4>
+      <article>
+        <h5>Articulo x</h5>
+        <ol>
+          <li>Ejemplo 1</li>
+          <li>Ejemplo 2</li>
+        </ol>
+      </article>
+      <article>
+        <h5>Articulo x</h5>
+        <p>Ejemplo 1</p>
+      </article>
+    </aside>
+    <footer>
+
+    </footer>
+  </main>
+</body>
+
+</html>
