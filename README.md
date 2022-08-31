@@ -10,7 +10,7 @@ En cada proyecto puede que se usen distintas tecnologías.
 
 En este Readme/Wiki tendré documentados mis apuntes y referencias.
 
-# # Instalación
+## Instalación
 
 - Clonar repositorio git clone
 - Abrir index.html en el navegador
@@ -31,7 +31,7 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 
 - Un Desarrollador puede entregar distintos tipos de aplicaciones como sitios web, aplicaciones moviles, APIs, aplicaciones de consola, drivers, sistemas operativos, aplicaciones de escritorio, apps para smartwach, plugins, drivers, etc.
 
--Vamos a profundizar principalmente en el desarrollador fullstack que se orienta al desarrollo web.
+- Vamos a profundizar principalmente en el desarrollador fullstack que se orienta al desarrollo web.
 
 - Vamos a asumir el conocimiento básico de internet y de computación.
 
@@ -51,33 +51,49 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 - Los estándares W3C y las Notas de los Grupos de Trabajo que se mencionan abajo son particularmente relevantes para la accesibilidad.
 
 - Muchos de los inventos humanos son investigados, normados, promovidos y deprecados por grandes organizaciones que establecen estandares, normas, especificaciones, certificaciones, buenas practicas, comunidades, y escuelas etc.
-  -La escuela w3s está llena de ejemplos básicos para cada cosa que necesitemos acerca de desarrollo a nivel inicial.
+- La escuela w3s está llena de ejemplos básicos para cada cosa que necesitemos acerca de desarrollo web a nivel inicial.
 - https://www.w3schools.com/
 - https://www.w3.org/WAI/standards-guidelines/es
 
 ### Cómo accedo a un sitio web?
 
-### Qué tecnologías básicas necesito para desarrollar un sitio web?
+- A través de escribir una url que es la direccion para identificar el sitio en un navegador.
+- Buscando en google.com un termino relacionado y explorar los resultados.
+
+### Qué tecnologías o conocimientos básicos necesito para desarrollar un sitio web?
 
 - Puedes tener informacion simplemente con un archivo.txt, aunque así se vería bastante feo, no tendriamos estilos y ninguna funcionalidad(validaciones, programación).
 - Podemos tener un archivo.html y si usamos el estandar HTML5 podríamos decir que estamos especificando un sitio web.
 - https://html.spec.whatwg.org/
 - Si agregamos una hoja de estilos en cascada archivo.css siguiendo el estándar CSS3 podriamos decir que estamos maquetando.
 - https://www.w3.org/Style/CSS/specs.en.html
+- Si agregamos codigo js dentro del archivo.html o si agregamos un archivo.js con un script dentro estamos agregando código o funcionalidades. A este punto le llamo desarrollar.
+- Si agregamos un sistema de versionado estamos hablando del inicio de nuestro camino fullstack.
+- Si todas estas tareas las identificamos, medimos, y documentamos de una forma iterativa y cercana al cliente/usuario y seguimos los principios del manifesto ágil http://agilemanifesto.org/iso/es/manifesto.html, felicitaciones vamos muy bien encaminados.
 
 ### Cuáles son los pasos que debo dar para desarrollar un sitio web y desplegarlo(implementarlo)? (Idealmente)
 
-## Git
+- Establecer objetivos. Ej: Quiero crear un sitio web donde mostrar mis servicios y recibir consultas.
 
-## HTML
-
-## CSS
-
-### Flexbox
-
-### Grid CSS
-
-## JS
+- Definir alcance. Especificar el cómo o la implicancia.
+- Diseñar la solución en un bosquejo.
+- Identificar, dividir y priorizar las tareas de forma pequeña, descriptiva y medible.
+- Utilizar alguna herramienta o sistema para ir registrando este avance
+- Iniciar el proyecto en un repositorio.
+- Crear estructura de carpetas
+- Crear readme
+- Crear archivo index.html, assets/css/estilos.css, assets/js/index.js
+- Enlazar archivos al index
+- Agregar bootstrap
+- Comprar dominio u obtener un subdominio gratuito. Lo mismo con el hosting.
+- Desplegar la aplicación.
+- Probar.
+- Automatizar el despliegue con alguna herramienta de integración continua.
+- Configurar los dns y enlazar el dominio
+- Configurar https
+- Hacer que google nos indexe
+- Enriquecer el contenido
+- Optimizar
 
 ## Proyectos
 
@@ -94,8 +110,138 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 - Navegador aplicando position fixed top
 - Se agrega un mapa emebebido en un iframe
 
+### Landing de ventas
+
+- Diseño mockup
+- Repositorio git
+- Estructura carpetas estandar
+- Utilizando bootstrap o similar
+- Navagacion <header>
+- Jumbotron introduccion y call to action para dejar el correo
+- Blog
+- Adicionales
+- Footer
+
 ### Cine
+
+- Este proyecto utilizara flexbox css
 
 ### Floreria
 
 ### Hamburguesería
+
+### Recomendaciones
+
+- Investigar sobre la crisis del software
+- Revisar stackoverflow
+
+## Git, Github, Git console, Github desktop
+
+- Git nos sirve para crear un repositorio con un sistema de versionado ampliamente usado
+
+## DOM
+
+- Document Object Model: El navegador carga el archivo html en un DOM, que es el documento cargado en la memoria del ordenador.
+
+1. Se carga el html
+2. Se parsea el html
+3. Se crea el arbol del DOM
+4. Se Carga css
+5. Parsea el css
+6. Se aplica el css al DOM
+7. Se visualiza
+
+## HTML
+
+- Agregar una estrutura básica de HTML5 es bastante simple podemos ver el ejemplo en maqueta 1 o maqueta 2.
+- <!Doctype html></html>:
+- <head></head>:
+- <body></body>:
+- <link>:
+- <meta>:
+- <main>:
+- <section></section>:
+- <article></article>:
+- <nav></nav>:
+- <footer></footer>:
+- <aside></aside>:
+- <img>:
+- <ul><li></li></ul>:
+- <style></style>:
+- <script></script>:
+
+## CSS
+
+- En las hojas de estilo en cascada primero identificamos al nodo html al cual le queremos aplicar diseño con los selectores, y especificamos las propiedades que queremos modificar y sus valores.
+- Cada tipo de nodo o componente puede tener distintas propiedades.
+- Las propiedades pueden tener un valor por defecto.
+- Si el navegador no entiende los selectores o las propiedades se las saltan.
+- https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_works
+- https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS
+
+### Responsive Design
+
+### Modelo de cajas
+
+- Todos los elementos o nodos html representados por las etiquetas se renderizan en el navegador como una caja.
+- Este modelo está formado por la caja contenido, el padding, los borders y los margin.
+- Padding es el espacio interno de un elemento que se situa entre el contenido y el borde.
+- Margin es el espacio por fuera del borde entre un elemento y los demás
+
+### Layout
+
+### Propiedad Display
+
+#### Display Block
+
+- Un div por defecto tiene su propiedad display con el valor block
+- El elemento usa el 100% del ancho posible
+
+#### Display Inline
+
+- El ancho y alto es definido por el contenido
+- El width y el height no funciona
+- Hay etiquetas que por defecto son display inline como por ejemplo las etiquetas label
+
+#### Display Inline-block
+
+- Podemos asignar ancho y alto
+- Un elemento inline block se posiciona al lado de los componentes
+
+#### Display flex
+
+- Debemos crear un contenedor y ese contenedor debe ser el padre con un display: flex
+- Los elementos se hacen flexible, acomodandose unos al lado del otro
+- No respe
+
+#### Display none
+
+### Propiedad Position
+
+-
+
+#### Position Static
+
+- No es necesario utilizarlo, es el position que viene por defecto.
+- Indica que el componente, etiqueta o nodo.
+
+#### Position Relative
+
+#### Position Absolute
+
+#### Position fixed
+
+#### Position Static
+
+- https://www.youtube.com/watch?v=1F_Q5NQBkyU&ab_channel=YoelvisMulen%7Bcode%7D
+- https://www.youtube.com/watch?v=FLet5o2ecE8&ab_channel=EduardoFierro
+
+### Z-index
+
+### Centrar Elementos
+
+### Flexbox
+
+### Grid CSS
+
+## JS
