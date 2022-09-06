@@ -1,0 +1,393 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap");
+header,
+section,
+main,
+footer,
+aside,
+nav,
+article,
+figure,
+figcaption {
+  display: block;
+}
+/* 
+*******************CONFIGURACION*******************
+*/
+/*
+
+Utilizando el signo * estamos seleccionando todos los elementos, con ::after y ::before estamos creando pseudoelementos que indiquen que antes y despues de cada elemento el tamaño de la caja se debe ajustar al borde
+*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+/*
+*******************VARIABLES*******************
+con :root se pueden aplicar estas propiedades a todos los elementos html*/
+:root {
+  --primary-font: "Raleway", sans-serif;
+  --primary-color: rgb(9, 121, 136);
+  --l-container-width: 1400px;
+  --m-container-width: 1200px;
+  --s-container-width: 700px;
+  --xs-container-width: 400px;
+  --s-textfont-size: 12px;
+  --m-textfont-size: 14px;
+  --l-textfont-size: 18px;
+  --x-textfont-size: 22px;
+}
+
+/*
+*******************ESTILOS GENERALES*******************
+*/
+
+body {
+  background-color: var(--primary-color);
+}
+
+p {
+  /*Define la altura del texto en los parrafos*/
+  line-height: 27px;
+}
+
+img {
+  vertical-align: top;
+  width: 100%;
+}
+
+/*
+*******************CONTENEDORES*******************
+Todos los Elementos que queramos centrar los vamos a dejar dentro de un div con la clase container
+*/
+
+.container {
+  /*El maximo que va a utilizar es el 90% del elemento que contenga al div*/
+  max-width: 90%;
+  /*Por defecto le asigaremos un ancho de 1200px*/
+  width: var(m-container-width);
+  /*Entre cada elemente container se separara de otros elementos por 20px*/
+  margin: 20px auto;
+  /*para que el contenido que sobre del contenedor se oculte*/
+  overflow: hidden;
+}
+
+.container-l {
+  width: 100%;
+  padding: 0 40px;
+  margin: 20px auto;
+}
+/*
+*******************GRID*******************
+Grid personalizada responsive sistema de columnas
+*/
+.grid {
+  display: grid;
+  /*Espacio entre filas y columnas*/
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+/* Tamaño de pantalla grande tv y pc
+Este va a ser el tamaño de pantalla pensado por defecto en el diseño al contrario del mobile first
+*/
+.column-1 {
+  /*con esto decimos que queremos dividir en 1 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(1, 1fr);
+}
+.column-2 {
+  /*con esto decimos que queremos dividir en 2columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(2, 1fr);
+}
+.column-3 {
+  /*con esto decimos que queremos dividir en 3 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(3, 1fr);
+}
+.column-4 {
+  /*con esto decimos que queremos dividir en 4 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(4, 1fr);
+}
+.column-5 {
+  /*con esto decimos que queremos dividir en 5 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(5, 1fr);
+}
+.column-6 {
+  /*con esto decimos que queremos dividir en 3 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(6, 1fr);
+}
+.column-7 {
+  /*con esto decimos que queremos dividir en 7 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(7, 1fr);
+}
+.column-8 {
+  /*con esto decimos que queremos dividir en 8 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(8, 1fr);
+}
+.column-9 {
+  /*con esto decimos que queremos dividir en 9 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(9, 1fr);
+}
+.column-10 {
+  /*con esto decimos que queremos dividir en 10 columnas y usar 1 fracion por cada una*/
+  grid-template-columns: repeat(10, 1fr);
+}
+/*Con esta propiedad vamos a declarar cuantas columnas abarca el elemento html*/
+.span-1 {
+  grid-column: span 1;
+}
+.span-2 {
+  grid-column: span 2;
+}
+.span-3 {
+  grid-column: span 3;
+}
+.span-4 {
+  grid-column: span 4;
+}
+.span-5 {
+  grid-column: span 5;
+}
+.span-6 {
+  grid-column: span 6;
+}
+.span-7 {
+  grid-column: span 7;
+}
+.span-8 {
+  grid-column: span 8;
+}
+.span-9 {
+  grid-column: span 9;
+}
+.span-10 {
+  grid-column: span 10;
+}
+/*Tamaño pantalla mediano tablets
+Para el responsive design usamos los media queries
+esto se va a ejecutar cuando la pantalla sea de 992 pixeles o menos
+*/
+
+@media screen and (max-width: 992px) {
+  .column-md-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .column-md-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .column-md-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .column-md-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .column-md-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .column-md-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .column-md-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .column-md-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .column-md-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .column-md-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+  .span-md-1 {
+    grid-column: span 1;
+  }
+  .span-md-2 {
+    grid-column: span 2;
+  }
+  .span-md-3 {
+    grid-column: span 3;
+  }
+  .span-md-4 {
+    grid-column: span 4;
+  }
+  .span-md-5 {
+    grid-column: span 5;
+  }
+  .span-md-6 {
+    grid-column: span 6;
+  }
+  .span-md-7 {
+    grid-column: span 7;
+  }
+  .span-md-8 {
+    grid-column: span 8;
+  }
+  .span-md-9 {
+    grid-column: span 9;
+  }
+  .span-md-10 {
+    grid-column: span 10;
+  }
+}
+/*
+Tamaño pequeño celulares
+*/
+@media screen and (max-width: 576px) {
+  .column-sm-1 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .column-sm-2 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .column-sm-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .column-sm-4 {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .column-sm-5 {
+    grid-template-columns: repeat(5, 1fr);
+  }
+  .column-sm-6 {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  .column-sm-7 {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  .column-sm-8 {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .column-sm-9 {
+    grid-template-columns: repeat(9, 1fr);
+  }
+  .column-sm-10 {
+    grid-template-columns: repeat(10, 1fr);
+  }
+}
+/* *******************COMPONENTES******************* */
+.card {
+  padding: 40px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 0px 30px rbga(211, 211, 211, 0.3);
+}
+.nav {
+  background-color: rgba(67, 16, 195);
+  /*Convierte a este elemento en uno flexible*/
+  display: flex;
+  /*Si no cabe el elemento en la linea lo deja en la siguiente*/
+  flex-wrap: wrap;
+}
+/*
+Sin estas reglas, al usar un container dentro de nav, las propiedades de flex del nav se perderian porque la clase container esta usando grid, para solucionar esto agremaos esta regla especificamente para este caso y sobrescribiendo la propiedad display a flex como el padre nav
+*/
+.nav .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+}
+/*Los link dentro de la navegacion*/
+.nav a {
+  color: #fff;
+  /*Remover el subrayado*/
+  text-decoration: none;
+  display: flex;
+  /*alinear todos los item al centro, eje icono+caja de texto o boton*/
+  align-items: center;
+  /*alinear texto*/
+  text-align: center;
+  /*el padding es el espacio entre el contenido de un elemento y su borde
+  en total son 4 valores pero se puede acortar con 2
+  15px top y bottom
+  25px left y right
+  */
+  padding: 15px 25px;
+  transition: 0.3s ease all;
+  font-size: 18px;
+}
+/*cuando se pase con el cursor sobre una etiqueta a
+y cuando se selecciona
+*/
+.nav a:active,
+.nav a:focus,
+.nav a:hover {
+  background-color: rgba(89, 59, 221);
+}
+/*
+*******************FUENTES*******************
+*/
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6 {
+  /*Por defecto los heading tienen un margen, asi que se lo vamos a quitar*/
+  margin-top: 0px;
+}
+
+.display-1 {
+  font-weight: 700px;
+  font-size: 64px;
+}
+.display-2 {
+  font-weight: 700px;
+  font-size: 54px;
+}
+.display-3 {
+  font-weight: 700px;
+  font-size: 44px;
+}
+/*
+*******************FORMULARIOS*******************
+*/
+/*estilos para todos los componentes dentro de un form*/
+form * {
+  font-family: var(--primary-font);
+}
+
+form .input {
+  /*espacio entre el contenido y el borde*/
+  padding: 10px 15px;
+  /*es para dar a los bordes un redondeado*/
+  border-radius: 3px;
+  /*grosor tipo de borde y color*/
+  border: 1px solid #d2d2d2;
+  transition: 0.3s ease all;
+  width: 100%;
+  margin-bottom: 20px;
+}
+/*cuando estemos sobre una caja de texto
+esta cambiara su color*/
+form .input:focus {
+  border: 1px solid #641ee7;
+  /*esta propiedad la modificamos para quitarle
+  el borde negro que le da por defecto el navegador*/
+  outline: none;
+}
+.button {
+  background-color: #641ee7;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+  display: inline-block;
+  padding: 10px 15px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 22px;
+  transition: 0.3s ease all;
+}
+
+.button:hover {
+  background-color: #5114c2;
+}
+.button.pink {
+  background-color: rgb(99, 12, 92);
+}
+
+.button.pink:hover {
+  background-color: rgb(52, 4, 48);
+}

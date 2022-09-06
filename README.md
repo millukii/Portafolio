@@ -178,6 +178,7 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 - Si el navegador no entiende los selectores o las propiedades se las saltan.
 - https://developer.mozilla.org/es/docs/Learn/CSS/First_steps/How_CSS_works
 - https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Debugging_CSS
+- https://developer.mozilla.org/en-US/docs/Web/CSS/Specificity
 
 ### Responsive Design
 
@@ -187,10 +188,30 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 - Este modelo está formado por la caja contenido, el padding, los borders y los margin.
 - Padding es el espacio interno de un elemento que se situa entre el contenido y el borde.
 - Margin es el espacio por fuera del borde entre un elemento y los demás
+- El modelo de cajas se puedem clasificar en bloques y en líneas.
+- Los elementos block tienen un tamaño personalizado y generan salto de línea.
+- Los elementos inline tienen un tamaño determinado por su contenido y no generan saltos de linea.
+- Los elementos block son adecuados para crear columnas y secciones del sitio como el nav, el header, section, footer, div
+- Los elementos inline representan el contenido de los elementos como em, strong, span
+- El modelo de caja tradicional establece que los elementos pueden flotar hacia izquierda/derecha y compartir el mismo espacio en una línea.
+- Para hacer flotar los elementos usamos la propiedad float y esta puede terner un valor left, right o none
 
 ### Layout
 
+- Un modo de diseño CSS(CSS layout mode), a veces simplemente llamado "layout", es un algoritmo que determina la posición y tamaño de cajas basado en la forma en la que interactúan con sus (elementos) hermanos y padres. Hay varios de ellos:
+
+- El block layout, diseñado para presentar documentos. El block layout contiene características de documento-centrado, como la capacidad de flotar(float) elementos o distribuirlos en múltiples columnas.
+- El inline layout, diseñado para presentar texto.
+- El table layout, diseñado para presentar tablas.
+- El positioned layout, diseñado para posicionar elementos sin demasiada interacción con otros elementos.
+- El flexible box layout, diseñado para presentar páginas complejas que pueden redimensionarse de forma fluida.
+- El grid layout, diseñado para presentar elementos relativos a una cuadrícula fija (fixed grid).
+- Nota: No todas las propiedades CSS aplican a todos los modos de diseño. La mayoría de ellos aplican a uno o dos de ellos y no tienen efecto si se configuran en un elemento que es parte de otro modo de diseño.
+- https://developer.mozilla.org/es/docs/Web/CSS/Layout_mode
+
 ### Propiedad Display
+
+- Esta es la propiedad que define el tipo de caja es decir, que un elemento sea block o inline
 
 #### Display Block
 
@@ -206,13 +227,12 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 #### Display Inline-block
 
 - Podemos asignar ancho y alto
-- Un elemento inline block se posiciona al lado de los componentes
+- Un elemento inline block se posiciona uno al lado del otro en una misma fila pero con el tamaño que queramos.
 
 #### Display flex
 
 - Debemos crear un contenedor y ese contenedor debe ser el padre con un display: flex
 - Los elementos se hacen flexible, acomodandose unos al lado del otro
-- No respe
 
 #### Display none
 
@@ -244,4 +264,13 @@ En este Readme/Wiki tendré documentados mis apuntes y referencias.
 
 ### Grid CSS
 
+### Variables
+
+- https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
+
 ## JS
+
+### Otras referencias
+
+- https://www.youtube.com/watch?v=wERUdGHvvVI&ab_channel=FalconMasters
+- https://www.youtube.com/watch?v=n4hgWGK_8cQ&ab_channel=HolaMundo
